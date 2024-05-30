@@ -1,0 +1,52 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+.border1, .border2 {
+    border: 1px solid black;
+    margin-bottom: 50px;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+.border1 {
+    padding: 25px 0px 25px 25px;
+    width: 510px;
+}
+.border2 {
+    padding: 0px 0px 25px 25px;
+    width: 660px;
+}
+
+.table1, .table2 {
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.table1 th, .table1 td, .table2 th, .table2 td {
+    border: 1px solid black;
+    padding: 5px 20px 5px 10px;
+    text-align: left;
+}
+
+td.right {
+    text-align: right;
+}
+
+.table1 th, .paint, .table2 th, .total {
+    background-color: yellow;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+td.bold {
+    font-weight: bold;
+}
+
+td.align {
+    vertical-align: top;
+}
