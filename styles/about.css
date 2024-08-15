@@ -86,3 +86,16 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Media queries */
+@media (max-width: 800px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 479px) {
+    header h1, header p, section h2 {
+        font-size: 0.5em;
+    }
+}
