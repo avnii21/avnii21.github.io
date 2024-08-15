@@ -1,0 +1,134 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    color: #3D57A3;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+nav ul {
+    display: flex; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a img {
+    width: 40px;  
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; 
+}
+
+nav ul li a img:hover {
+    transform: scale(1.2); 
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact-header {
+    text-align: center;
+    color: #7cc4ff;
+    margin-bottom: 1rem;
+}
+
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px double #3D57A3;
+    width: 400px;
+    max-width: 90%;
+    margin: auto;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: #7cc4ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3D57A3;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Media queries */
+@media (max-width: 800px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 479px) {
+    header h1, header p, section h2 {
+        font-size: 0.5em;
+    }
+}

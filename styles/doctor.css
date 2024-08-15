@@ -1,0 +1,113 @@
+/* General styling */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: #3D57A3;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+.back-button {
+    text-align: right;
+    margin: 20px;
+}
+
+.back-button button {
+    background-color: #fdd8a4;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-button button:hover {
+    background-color: wheat;
+    color: #333;
+}
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a img {
+    width: 40px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.doctor-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.doctor-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.doctor-box h2 {
+    color: #7cc4ff;
+    margin-top: 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}

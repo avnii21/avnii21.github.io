@@ -1,0 +1,129 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    color: #3D57A3;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a img {
+    width: 40px;  
+    height: auto;
+    display: block; 
+    transition: transform 0.3s ease; 
+}
+
+nav ul li a img:hover {
+    transform: scale(1.2); 
+}
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+h2 {
+    color: #7cc4ff;
+    font-family: "Poppins", sans-serif;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-box {
+    background-color: white;
+    border: 4px double #3D57A3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none; 
+    color: inherit; 
+    transition: transform 0.2s, background-color 0.3s; 
+    display: block; 
+}
+
+.service-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    color: black;
+}
+
+
+.service-box h3 {
+    color: #7cc4ff;
+    margin: 0 0 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.service-box p {
+    color: black;
+}
+.service-box:hover {
+    transform: scale(1.05);
+    background-color: #fdd8a4;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+    .services-container {
+        flex-direction: column;
+    }
+}
+

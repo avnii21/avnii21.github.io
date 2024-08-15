@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHAC</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Medical History Access Card</h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html"><img src="images/home.png" alt="Home"></a></li>
+                    <li><a href="Category Links/about.html"><img src="images/medical-team.png" alt="About"></a></li>
+                    <li><a href="Category Links/contact.html"><img src="images/contact-mail.png" alt="Contact"></a></li>
+                    <li id="services-link"></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="background">
+            <div class="form-section">
+                <h2>Please enter your MHAC number to access all of our services:</h2>
+                <form id="mhacForm">
+                    <label for="mhacNumber">MHAC number:</label>
+                    <input type="text" id="mhacNumber" name="mhac_number" required><br>
+                    <button type="submit">Enter</button>
+                </form>
+            </div>
+        </div>
+        <audio controls style="margin-top: 20px;">
+            <source src="media/audio.mp3" type="audio/mpeg">
+            <source src="media/audio.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coders Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('mhacForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+            var mhacNumber = document.getElementById('mhacNumber').value;
+            if(mhacNumber) {
+                // Add the Services link to the nav bar
+                document.getElementById('services-link').innerHTML = '<a href="Category Links/services.html?mhac_number=' + mhacNumber + '"><img src="images/services.png" alt="Services"></a>';
+                // Optionally, redirect to the Services page automatically
+                window.location.href = 'Category Links/services.html?mhac_number=' + mhacNumber;
+            }
+        });
+    </script>
+</body>
+</html>

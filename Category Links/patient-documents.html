@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Documents</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/docs.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Patient Documents</h1>
+            <nav>
+                <ul>
+                    <li><a href="../main.html"><img src="../images/home.png" alt="Home"></a></li>
+                    <li><a href="../Category Links/about.html"><img src="../images/medical-team.png" alt="About"></a></li>
+                    <li><a href="../Category Links/contact.html"><img src="../images/contact-mail.png" alt="Contact"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="back-button">
+        <a href="../Category Links/services.html"><button type="button">Back to Services</button></a>
+    </div>
+
+    <main>
+        <div class="document-info">
+            <div class="document-box">
+                <h2>Family Doctor</h2>
+                <p>View Prescription</p>
+                <button class="view-button" data-image="../images/prescription.jpg">View</button>
+            </div>
+            <div class="document-box">
+                <h2>Physiotherapist</h2>
+                <p>View X-ray</p>
+                <button class="view-button" data-image="../images/xrayreport.png">View</button>
+            </div>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="enlargedImage">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coders Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="../docs.js"></script>
+</body>
+</html>

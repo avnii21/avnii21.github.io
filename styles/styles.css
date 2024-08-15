@@ -1,0 +1,141 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: #3D57A3;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex; /* This makes the list items display in a horizontal row */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default list styling */
+    justify-content: center; /* Center the icons horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds space between each icon */
+}
+
+nav ul li a img {
+    width: 40px;  /* Adjust the size of the icons as needed */
+    height: auto;
+    display: block; /* Ensure the image behaves as a block element for better spacing control */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+nav ul li a img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center/cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: black;
+    text-align: center;
+}
+
+.background {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #7cc4ff;
+    text-shadow: 1px 1px 2px black;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px black;
+}
+input[type="text"] {
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px; 
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fdd8a4;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: wheat;
+    color: #333;
+}
+audio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures the audio bar is on top of other elements */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Media queries */
+@media (max-width: 800px) {
+    body {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 479px) {
+    header h1, header p, section h2 {
+        font-size: 0.5em;
+    }
+}
